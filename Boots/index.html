@@ -11,20 +11,20 @@
     <title>Yummy - Projeto Final Bootstrap</title>
 
     <style>
-      /* Fontes e ajustes finos */
+    
       body { font-family: "Inter", sans-serif; }
       h1, h2, h3, .navbar-brand { font-family: "Amatic SC", cursive; }
       .ls-2 { letter-spacing: 2px; }
       html { scroll-behavior: smooth; }
 
-      /* Imagens do Menu */
+    
       .img-menu-size {
         width: 250px;
         height: 250px;
         object-fit: cover;
       }
 
-      /* Estilo para o Carrossel de Eventos */
+    
       .event-item {
         height: 500px;
         background-size: cover;
@@ -40,7 +40,7 @@
         width: 100%;
       }
 
-      /* Estilo para a Seção Stats (Fundo Fixo) */
+    
       .stats-counter {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Boots/img/stats-bg.jpg') center center no-repeat;
         background-size: cover;
@@ -49,18 +49,29 @@
         padding: 80px 0;
       }
 
-      /* Ajuste das imagens da Galeria */
+  
       .img-gallery-carousel {
         height: 500px;
         object-fit: cover;
         width: 100%;
       }
       
-      /* Foco nos inputs com a cor do tema */
+  
       .form-control:focus {
         border-color: #ce1212;
         box-shadow: none;
       }
+
+    
+      .why-box { background: #ce1212; color: white; padding: 30px; }
+      .why-item { background: #fff; padding: 40px; height: 100%; border: 1px solid #eee; transition: 0.3s; }
+      .icon-circle { 
+        width: 64px; height: 64px; background: #fceef3; border-radius: 50%; 
+        display: inline-flex; align-items: center; justify-content: center; 
+        color: #ce1212; font-size: 28px; margin-bottom: 20px; 
+      }
+      .testimonial-img { width: 150px; border-radius: 50%; border: 6px solid #f8f9fa; }
+      .testimonial-content { border-left: 3px solid #ce1212; padding-left: 30px; }
     </style>
   </head>
 
@@ -106,6 +117,45 @@
           </div>
           <div class="col-lg-7 text-center">
             <img src="/Boots/img/menu-item-2.png" alt="Prato principal" class="img-fluid rounded-circle shadow-lg w-75 border border-5 border-white" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-us" class="py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="why-box rounded shadow">
+              <h3 class="fw-bold mb-3" style="font-family: 'Inter', sans-serif;">Why Choose Yummy</h3>
+              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit.</p>
+              <div class="text-center"><a href="#" class="btn btn-light rounded-pill px-4 py-2 text-danger fw-bold">Learn More ></a></div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row gy-4">
+              <div class="col-md-4 text-center">
+                <div class="why-item shadow-sm">
+                  <div class="icon-circle">📋</div>
+                  <h4 class="h5 fw-bold">Corporis voluptates</h4>
+                  <p class="small text-secondary">Consequuntur sunt aut quasi enim aliquam quae harum.</p>
+                </div>
+              </div>
+              <div class="col-md-4 text-center">
+                <div class="why-item shadow-sm">
+                  <div class="icon-circle"></div>
+                  <h4 class="h5 fw-bold">Ullamco laboris</h4>
+                  <p class="small text-secondary">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+                </div>
+              </div>
+              <div class="col-md-4 text-center">
+                <div class="why-item shadow-sm">
+                  <div class="icon-circle"></div>
+                  <h4 class="h5 fw-bold">Labore conseq</h4>
+                  <p class="small text-secondary">Aut suscipit aut cum nemo deleniti aut omnis.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -182,6 +232,49 @@
           <div class="col-lg-3 col-6">
             <span class="display-4 fw-bold">32</span>
             <p class="text-white-50">Workers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="text-secondary fs-6 ls-2 text-uppercase mb-2">Testimonials</h2>
+          <p class="display-5 fw-bold">What Are They <span class="text-danger">Saying About Us</span></p>
+        </div>
+        <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 testimonial-content bg-white p-4 shadow-sm rounded">
+                  <p class="fst-italic fs-5">"Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim."</p>
+                  <h4 class="mb-1">Saul Goodman</h4>
+                  <p class="text-secondary small mb-2">CEO & Founder</p>
+                  <div class="text-warning"></div>
+                </div>
+                <div class="col-lg-3 text-center mt-4 mt-lg-0">
+                  <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img shadow" alt="User">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 testimonial-content bg-white p-4 shadow-sm rounded">
+                  <p class="fst-italic fs-5">"Export minim illum ctetur quae quorum niderer enim eram quae cillum dolore dolor amet nulla culpa multos export."</p>
+                  <h4 class="mb-1">Sara Wilsson</h4>
+                  <p class="text-secondary small mb-2">Designer</p>
+                  <div class="text-warning">★★★★★</div>
+                </div>
+                <div class="col-lg-3 text-center mt-4 mt-lg-0">
+                  <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img shadow" alt="User">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-indicators position-relative mt-4">
+            <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="0" class="active bg-danger rounded-circle" style="width:12px; height:12px"></button>
+            <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="1" class="bg-danger rounded-circle" style="width:12px; height:12px"></button>
           </div>
         </div>
       </div>
